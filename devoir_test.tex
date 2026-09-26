@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+
+% ---------- Variables du Document ----------
+\newcommand{\monTitre}{Devoir 1}
+\newcommand{\monAuteur}{Biernacki Antonin}
+\newcommand{\maDate}{octobre 2026}
+
+% ---------- Bibliographie ----------
+\usepackage{natbib}
+
+% ---------- Langue & encodage ----------
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---------- Mise en page ----------
+\usepackage[a4paper, left=3cm, right=2.5cm, top=3cm, bottom=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% ---------- Couleurs ----------
+\definecolor{accentcolor}{RGB}{0, 51, 102}
+
+% ---------- Style des titres de section ----------
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{accentcolor}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{accentcolor}}{\thesubsection}{1em}{}
+
+% ---------- En-tête / pied de page ----------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\lhead{\monTitre} 
+\rhead{\monAuteur}
+\cfoot{\thepage}
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% PAGE DE TITRE
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{titlepage}
+		\centering
+		\vspace*{0.5cm}
+		
+		% Logo
+		\includegraphics[scale=0.5]{universite-laval.png}\\[1.0cm]
+		
+		{\large\scshape IFT-7009}\\[0.3cm]
+		{\large\scshape Réseaux mobiles}\\[1cm]
+		
+		\color{accentcolor}
+		\rule{\linewidth}{0.6mm}\\[0.4cm]
+		{\huge\bfseries \monTitre}\\[0.3cm]
+		\rule{\linewidth}{0.6mm}\\[1.5cm]
+		\color{black}
+		
+		\begin{minipage}{0.45\textwidth}
+			\begin{flushleft}\large
+				\emph{Auteur :}\\
+				\monAuteur
+			\end{flushleft}
+		\end{minipage}
+		\begin{minipage}{0.45\textwidth}
+			\begin{flushright}\large
+				\emph{Numéro d'étudiant :}\\
+				537466744
+			\end{flushright}
+		\end{minipage}\\[2cm]
+		
+		{\large \maDate}
+		
+		\vfill
+	\end{titlepage}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\tableofcontents
+	\pagebreak
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{Introduction}
+	Remplace ce texte par le contenu de ton rapport. La table des matières se met à jour automatiquement à chaque compilation.
+	
+	Pour citer une source, ajoute une entrée dans \texttt{biblist.bib} puis utilise \texttt{\textbackslash cite\{clé\}} \cite{bibtex}.
+	
+	\section{Section suivante}
+	Exemple de sous-section.
+	
+	\subsection{Sous-section}
+	Texte ici.
+	
+	\newpage
+	\bibliographystyle{plain}
+	\bibliography{biblist}
+	
+\end{document}
