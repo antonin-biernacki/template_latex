@@ -1,0 +1,13 @@
+# Ignorer absolument tout par défaut
+/*
+
+# Ne pas ignorer le fichier README.txt
+!README.txt
+
+# Ne pas ignorer les fichiers source spécifiques
+!biblist.bib
+!devoir_test.tex
+
+# Ne pas ignorer le dossier images et son contenu
+!images/
+!images/**
