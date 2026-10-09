@@ -2,7 +2,8 @@
 
 % ---------- Variables du Document ----------
 \newcommand{\monTitre}{Devoir 1}
-\newcommand{\monAuteur}{Biernacki Antonin}
+\newcommand{\premierAuteur}{Biernacki Antonin}
+%\newcommand{\secondAuteur}{Biernacki Antonin}
 \newcommand{\maDate}{octobre 2026}
 
 % ---------- Bibliographie ----------
@@ -24,6 +25,11 @@
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
+\usepackage{float}
+
+% ---------- Autres ----------
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
 
 % ---------- Couleurs ----------
 \definecolor{accentcolor}{RGB}{0, 51, 102}
@@ -42,7 +48,8 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 \lhead{\monTitre} 
-\rhead{\monAuteur}
+%\rhead{\premierAuteur\ \& \secondAuteur}
+\rhead{\premierAuteur}
 \cfoot{\thepage}
 
 \begin{document}
@@ -70,13 +77,15 @@
 		\begin{minipage}{0.45\textwidth}
 			\begin{flushleft}\large
 				\emph{Auteur :}\\
-				\monAuteur
+				\premierAuteur
+				%\secondAuteur
 			\end{flushleft}
 		\end{minipage}
 		\begin{minipage}{0.45\textwidth}
 			\begin{flushright}\large
 				\emph{Numéro d'étudiant :}\\
-				537466744
+				537466744%\\
+				%XXXXXXXX
 			\end{flushright}
 		\end{minipage}\\[2cm]
 		
