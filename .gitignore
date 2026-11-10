@@ -2,7 +2,7 @@
 /*
 
 # Ne pas ignorer le fichier README.txt
-!README.txt
+!README.md
 
 # Ne pas ignorer les fichiers source spécifiques
 !biblist.bib
