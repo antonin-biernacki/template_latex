@@ -9,5 +9,6 @@
 !devoir_test.tex
 
 # Ne pas ignorer le dossier images et son contenu
+!apercus
 !images/
 !images/**
